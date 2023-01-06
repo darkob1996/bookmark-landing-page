@@ -1,0 +1,126 @@
+@import "variables";
+
+.button--red {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: $soft-red;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: #fff;
+    color: $soft-red;
+    border: 2px solid $soft-red;
+  }
+}
+
+.button--blue {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: $soft-blue;
+  color: #fff;
+  font-size: calc(1rem + 0.4vw);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-800) {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $soft-blue;
+    color: $soft-blue;
+  }
+}
+
+.button--white {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: rgb(244, 244, 247);
+  font-size: 1.5rem;
+  box-shadow: 0 0.1rem 0.7rem rgba(1, 1, 1, 0.2);
+  border: 2px solid transparent;
+  color: $grayish-blue;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $grayish-blue;
+    color: $grayish-blue;
+  }
+}
+
+.heading-primary {
+  font-size: calc(1rem + 3vw);
+  font-weight: $font-weight-bold;
+
+  @media only screen and (max-width: $bp-600) {
+    font-size: calc(1rem + 2.5vw);
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    font-size: calc(1rem + 2vw);
+  }
+
+  @media only screen and (max-width: $bp-375) {
+    font-size: calc(1rem + 1.5vw);
+  }
+}
+
+.heading-secondary {
+  font-size: calc(0.8rem + 2vw);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: calc(1rem + 0.7vw);
+  color: $grayish-blue;
+  font-weight: $font-weight-normal;
+
+  @media only screen and (max-width: $bp-600) {
+    font-size: calc(0.8rem + 2vw);
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    font-size: calc(0.8rem + 1.5vw);
+  }
+
+  @media only screen and (max-width: $bp-375) {
+    font-size: calc(0.8rem + 1vw);
+  }
+}
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-big {
+  margin-bottom: 4rem;
+}
+
+.mb-large {
+  margin-bottom: 5rem;
+}
+
+.feature.hidden {
+  display: none;
+}
+
+.link-blue:link,
+.link-blue:visited {
+  color: red;
+}
+
+.menu.hidden {
+  display: none;
+}

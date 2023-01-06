@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="menu hidden">
+      <div class="menu__header">
+        <img
+          src="./images/logo-bookmark.svg"
+          alt="Logo bookmark"
+          class="menu__header--logo"
+        />
+
+        <img
+          src="./images/icon-close.svg"
+          alt="Icon close"
+          class="menu__header--close"
+        />
+      </div>
+
+      <div class="menu__nav">
+        <ul class="menu__nav--list">
+          <li class="menu__nav--item">
+            <a href="#" class="menu__nav--link">Features</a>
+          </li>
+          <li class="menu__nav--item">
+            <a href="#" class="menu__nav--link">Pricing</a>
+          </li>
+          <li class="menu__nav--item">
+            <a href="#" class="menu__nav--link">Contact</a>
+          </li>
+        </ul>
+
+        <button href="#" class="menu__nav--login">Login</button>
+      </div>
+
+      <div class="menu__social">
+        <img
+          src="./images/icon-facebook.svg"
+          alt="Icon facebook"
+          class="menu__social--icon"
+        />
+
+        <img
+          src="./images/icon-twitter.svg"
+          alt="Icon twitter"
+          class="menu__social--icon"
+        />
+      </div>
+    </div>
+
+    <header class="header">
+      <nav class="header__nav">
+        <img
+          src="./images/logo-bookmark.svg"
+          alt="Bookmark logo"
+          class="header__nav--logo"
+        />
+
+        <ul class="header__nav--list">
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Features</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Pricing</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Contact</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="button--red">Login</a>
+          </li>
+        </ul>
+
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="Icon menu open"
+          class="header__nav--menu-open"
+        />
+      </nav>
+
+      <div class="header__hero">
+        <div class="header__hero--text">
+          <h1 class="heading-primary">A simple bookmark manager</h1>
+          <p class="paragraph">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="header__hero--cta">
+            <a href="#" class="header__hero--link button--blue"
+              >Get it on Chrome</a
+            >
+
+            <a href="#" class="header__hero--link button--white"
+              >Get it on Firefox</a
+            >
+          </div>
+        </div>
+        <div class="header__hero--img-container">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="Hero illustration"
+            class="header__hero--img"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="section-features">
+      <div class="features__info">
+        <h2 class="heading-secondary mb-small">Features</h2>
+        <p class="paragraph">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <div class="features__tabs">
+        <div class="features__tab features__tab--active">
+          Simple bookmarking
+        </div>
+        <div class="features__tab">Speedy searching</div>
+        <div class="features__tab">Easy sharing</div>
+      </div>
+
+      <div class="feature feature--1">
+        <div class="feature__img-container feature__img-container-1">
+          <img
+            src="./images/illustration-features-tab-1.svg"
+            alt="Illustration 1"
+            class="feature__img"
+          />
+        </div>
+
+        <div class="feature__text">
+          <h2 class="heading-secondary mb-small">Bookmark in one click</h2>
+          <p class="paragraph">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature feature--2 hidden">
+        <div class="feature__img-container feature__img-container-2">
+          <img
+            src="./images/illustration-features-tab-2.svg"
+            alt="Illustration 2"
+            class="feature__img"
+          />
+        </div>
+
+        <div class="feature__text">
+          <h2 class="heading-secondary mb-small">Intelligent search</h2>
+          <p class="paragraph">
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature feature--3 hidden">
+        <div class="feature__img-container feature__img-container-3">
+          <img
+            src="./images/illustration-features-tab-3.svg"
+            alt="Illustration 3"
+            class="feature__img"
+          />
+        </div>
+
+        <div class="feature__text">
+          <h2 class="heading-secondary mb-small">More Info</h2>
+          <p class="paragraph">
+            Share your bookmarks Easily share your bookmarks and collections
+            with others. Create a shareable link that you can send at the click
+            of a button.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-extensions">
+      <div class="section__info mb-large">
+        <h2 class="heading-secondary">Download the extension</h2>
+        <p class="paragraph">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+      <div class="extensions">
+        <div class="extension extension--1">
+          <div class="extension__content">
+            <img
+              src="./images/logo-chrome.svg"
+              alt="Google chrome logo"
+              class="extension__img"
+            />
+            <h3 class="extension__heading">Add to Chrome</h3>
+            <p class="extension__paragraph">Minimum vesion 62</p>
+          </div>
+
+          <a href="#" class="extension__button button--blue"
+            >Add & install extension</a
+          >
+        </div>
+
+        <div class="extension extension--2">
+          <div class="extension__content">
+            <img
+              src="./images/logo-firefox.svg"
+              alt="Firefox logo"
+              class="extension__img"
+            />
+            <h3 class="extension__heading">Add to Firefox</h3>
+            <p class="extension__paragraph">Minimum version 55</p>
+          </div>
+
+          <a href="#" class="extension__button button--blue"
+            >Add & install extension</a
+          >
+        </div>
+
+        <div class="extension extension--3">
+          <div class="extension__content">
+            <img
+              src="./images/logo-opera.svg"
+              alt="Opera logo"
+              class="extension__img"
+            />
+            <h3 class="extension__heading">Add to Opera</h3>
+            <p class="extension__paragraph">Minimum vesion 46</p>
+          </div>
+
+          <a href="#" class="extension__button button--blue"
+            >Add & install extension</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section-faq">
+      <div class="section__info mb-large">
+        <h2 class="heading-secondary">Frequently Asked Questions</h2>
+        <p class="paragraph">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="question__container mb-large">
+        <div class="question question--1">
+          <div class="question__title">
+            <span>What is Bookmark?</span>
+            <img
+              src="./images/icon-arrow.svg"
+              alt="Icon arrow"
+              class="icon-arrow"
+            />
+            <div class="question__answer question__answer--1 hidden">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </div>
+          </div>
+        </div>
+
+        <div class="question question--2">
+          <div class="question__title">
+            <span>How can I request a new browser?</span>
+            <img
+              src="./images/icon-arrow.svg"
+              alt="Icon arrow"
+              class="icon-arrow"
+            />
+            <div class="question__answer question__answer--2 hidden">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </div>
+          </div>
+        </div>
+
+        <div class="question question--3">
+          <div class="question__title">
+            <span>Is there a mobile app?</span>
+            <img
+              src="./images/icon-arrow.svg"
+              alt="Icon arrow"
+              class="icon-arrow"
+            />
+
+            <div class="question__answer question__answer--3 hidden">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </div>
+          </div>
+        </div>
+
+        <div class="question question--4">
+          <div class="question__title">
+            <span>What about other Chromium browsers?</span>
+            <img
+              src="./images/icon-arrow.svg"
+              alt="Icon arrow"
+              class="icon-arrow"
+            />
+            <div class="question__answer question__answer--4 hidden">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit. More Info 35,000+ already joined Stay
+              up-to-date with what we’re doing Contact Us Features Pricing
+              Contact
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question__button">
+        <a href="#" class="button--blue">More info</a>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="contact__container">
+        <span class="contact__span">35,000+ already joined</span>
+        <h2 class="heading-secondary">Stay up-to-date with what we're doing</h2>
+        <form class="contact__form">
+          <div class="contact__form--field">
+            <input
+              type="email"
+              class="contact__form--input"
+              placeholder="Enter your email address"
+            />
+            <label><i>Whoops, make sure it's an email!</i></label>
+            <img
+              src="./images/icon-error.svg"
+              alt="Icon error"
+              class="icon-error"
+            />
+          </div>
+
+          <button class="contact__form--submit button--red">Contact us</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <nav class="footer__nav">
+        <img
+          src="./images/logo-bookmark.svg"
+          alt="Bookmark logo"
+          class="footer__nav--logo"
+        />
+
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="#" class="footer__nav--link">Features</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#" class="footer__nav--link">Pricing</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#" class="footer__nav--link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer__social">
+          <a href="#">
+            <svg
+              class="footer__social--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="20"
+            >
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+              />
+            </svg>
+          </a>
+
+          <a href="#">
+            <svg
+              class="footer__social--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
